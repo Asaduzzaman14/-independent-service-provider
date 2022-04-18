@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-// import Loading from './Loading/Loading';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import Loading from '../../Pages/Loading/Loading';
 import SocilaLogin from '../SocilaLogin/SocilaLogin';
 
 const LogIn = () => {
@@ -29,7 +29,7 @@ const LogIn = () => {
 
     }
     if (loading || sending) {
-        // return <Loading></Loading>
+        return <Loading></Loading>
     }
 
 
@@ -51,10 +51,10 @@ const LogIn = () => {
         if (email) {
 
             await sendPasswordResetEmail(email)
-            alert('send email')
+            toast('send email')
         }
         else {
-            // toast('please enter your email')
+            toast('please enter your email')
         }
     }
 
@@ -89,7 +89,7 @@ const LogIn = () => {
                 <SocilaLogin></SocilaLogin>
             </Form>
 
-            {/* <ToastContainer /> */}
+            <ToastContainer />
         </div>
     );
 };
