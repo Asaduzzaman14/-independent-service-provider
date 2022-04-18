@@ -9,7 +9,11 @@
 #Techonlgy stack 
 * JavaScript
 * React
-* Tailwind
+* vanila css
+* Bootstrap
+* React Bootstrap
+* tostify
+* firebase
 * React Icon
 
 #Website Features

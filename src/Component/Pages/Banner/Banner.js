@@ -25,8 +25,12 @@ const Banner = () => {
                     alt="Second slide"
                 />
                 <Carousel.Caption>
-                    <h3>Dental Care</h3>
-                    <p>Specially designed for patients seeking dentistry abroad, we offer you bespoke expertise at a price that is unbelievably affordable.</p>
+                    <div className='banner-text'>
+
+                        <h3>Dental Care</h3>
+                        <p>Specially designed for patients seeking dentistry abroad, we offer you bespoke expertise at a price that is unbelievably affordable.</p>
+                    </div>
+
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
