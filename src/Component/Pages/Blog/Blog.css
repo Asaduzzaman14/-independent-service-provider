@@ -6,6 +6,7 @@
     padding: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .qus-ans-container h4 {

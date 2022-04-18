@@ -16,7 +16,7 @@ const Home = () => {
 
 
     return (
-        <div className=''>
+        <div>
             <Banner></Banner>
 
             <h2 className='text-center mt-5 mb-4'>My Services</h2>

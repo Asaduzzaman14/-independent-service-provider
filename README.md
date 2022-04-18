@@ -2,7 +2,6 @@
 
 # live site: 
 
-
 #example project 
 
 #Techonlgy stack 
@@ -11,6 +10,15 @@
 * Tailwind
 * React Icon
 
+#Website Features
+* sign in with email and password
+* register with google
+* Email verification
+* Reset password
+* require authentication
+* blog page
+* about page 
+* simple footer
 
 
 # Getting Started with Create React App

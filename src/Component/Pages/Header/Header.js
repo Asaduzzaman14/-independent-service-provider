@@ -35,6 +35,7 @@ const Header = () => {
                                 </NavDropdown> */}
                             </Nav>
                             <Nav>
+                                <Nav.Link as={Link} to="/home">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                                 <Nav.Link as={Link} to="/contuct">Contuct</Nav.Link>
