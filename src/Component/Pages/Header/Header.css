@@ -1,3 +1,17 @@
 .logo {
     width: 80px;
 }
+
+.navbar {
+    background-color: rgba(191, 182, 221, 0.446);
+    color: #000;
+}
+
+.sign-out {
+    background: red;
+}
+
+
+.navbar-nav {
+    color: red;
+}

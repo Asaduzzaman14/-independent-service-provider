@@ -18,7 +18,7 @@ const Header = () => {
     return (
         <div>
             <>
-                <Navbar collapseOnSelect expand="lg" sticky='top' bg="primary" variant="dark">
+                <Navbar collapseOnSelect expand="lg" sticky='top' variant="dark" className='navbar'>
                     <Container>
                         <Navbar.Brand as={Link} to="/"><img className='logo' src={logo} alt="" /></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -41,7 +41,7 @@ const Header = () => {
                                 {/* <Nav.Link as={Link} to="/signin">SignIn</Nav.Link> */}
 
 
-                                {user ? <button className='border-0 rounded bg-info text-white px-3' onClick={handelSignOut}>signout</button>
+                                {user ? <button className=' sign-out border-0 rounded  text-white px-3' onClick={handelSignOut}>signout</button>
                                     :
                                     <Nav.Link as={Link} to="/login">LogIn</Nav.Link>
                                 }
