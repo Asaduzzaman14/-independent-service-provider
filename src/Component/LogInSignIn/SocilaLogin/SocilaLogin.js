@@ -3,6 +3,7 @@ import google from '../../images/logo/google.png'
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import './SocialLogin.css'
 
 const SocilaLogin = () => {
     const navigate = useNavigate()
@@ -34,7 +35,7 @@ const SocilaLogin = () => {
             </div>
             <p className='text-danger'>{hookError}</p>
             <div className=''>
-                <button onClick={() => signInWithGoogle()} className='btn-info rounded p-1 mb-2 d-block mx-auto w-50'>
+                <button onClick={() => signInWithGoogle()} className=' google  rounded p-1 mb-2 d-block mx-auto w-50'>
                     <img style={{ width: '30px', marginRight: '20px' }} src={google} alt="" />
                     Google sign In
                 </button>

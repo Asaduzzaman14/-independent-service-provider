@@ -1,0 +1,15 @@
+.login-title {
+    color: rgb(14, 14, 85);
+
+}
+
+.login-btn {
+    background-color: rgb(14, 14, 85);
+    color: #fff;
+}
+
+.login-btn:hover {
+    color: rgb(12, 12, 94);
+    background-color: #fff;
+    border: 2px solid rgb(12, 12, 94);
+}

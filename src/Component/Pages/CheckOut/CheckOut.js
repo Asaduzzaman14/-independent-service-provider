@@ -1,19 +1,17 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import useServices from '../../../hooks/useServices';
+import './CheckOut.css'
+
 
 const CheckOut = () => {
     const { id } = useParams()
-
-    const [services] = useServices()
-
 
 
 
     return (
         <div className='text-center'>
             <h2 className='text-center my-4'>Welcome to Checkout page</h2>
-            <form >
+            <form className='Checkout-from'>
                 <input type="text" name='name' placeholder='Your name' />
                 <br />
                 <br />
@@ -23,7 +21,7 @@ const CheckOut = () => {
                 <input type="text" name='address' placeholder='Your address' />
                 <br />
                 <br />
-                <button>Book Now</button>
+                <button className='book-now-btn'>Book Now</button>
             </form>
         </div>
     );

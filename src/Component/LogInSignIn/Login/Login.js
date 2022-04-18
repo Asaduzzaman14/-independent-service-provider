@@ -7,6 +7,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import Loading from '../../Pages/Loading/Loading';
 import SocilaLogin from '../SocilaLogin/SocilaLogin';
+import './Login.css'
+
 
 const LogIn = () => {
 
@@ -60,7 +62,7 @@ const LogIn = () => {
 
     return (
         <div>
-            <h2 className='text-center mt-5 text-primary'>Please log in</h2>
+            <h2 className=' login-title text-center mt-5 '>Please log in</h2>
             <Form onSubmit={handelSubmit} className='w-50 mx-auto mt-5'>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -73,13 +75,13 @@ const LogIn = () => {
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+                </Form.Group> */}
                 <p className='text-danger'>{hookError}</p>
 
 
-                <Button variant="primary" type="submit">  LogIn</Button>
+                <Button className='login-btn' type="submit">  LogIn</Button>
 
 
                 <p className='my-2 p-auto'> <Link to='/register' className='text-primary text-decoration-none' onClick={() => navigate('/signin')}>Please Register</Link></p>
