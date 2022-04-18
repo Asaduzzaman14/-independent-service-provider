@@ -10,6 +10,7 @@ import NotFound from './Component/Pages/NotFound/NotFound';
 import RequirAuth from './Component/LogInSignIn/RequirAuth/RequirAuth';
 import Register from './Component/LogInSignIn/Register/Register';
 import CheckOut from './Component/Pages/CheckOut/CheckOut';
+import Coutuct from './Component/Pages/Contuct/Coutuct';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
 
         <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/about' element={<About></About>}></Route>
+        <Route path='/contuct' element={<Coutuct></Coutuct>}></Route>
 
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
