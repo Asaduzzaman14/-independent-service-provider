@@ -1,11 +1,12 @@
 import React from 'react';
+import './Footer.css'
 
 const Footer = () => {
     const date = new Date()
     const year = date.getFullYear()
     return (
-        <div className='mt-5 text-center'>
-            <h3>&copy; All Right Reserver Authorige {year}</h3>
+        <div className='mt-5 text-center footer'>
+            <p>&copy; All Right Reserver Authorige {year}</p>
         </div>
     );
 };

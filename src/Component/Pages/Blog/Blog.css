@@ -1,0 +1,14 @@
+.ans-header {
+    color: rgb(20, 6, 87);
+}
+
+.qus-ans-container {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.qus-ans-container h4 {
+    font-weight: 400;
+
+}
